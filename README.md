@@ -1,34 +1,93 @@
-# credit_scoring
 
-Projeto - Credit Scoring com Regressão Logística
+# 🏦 Credit Score com Machine Learning
 
-## O que aprendemos:
+Este projeto implementa um modelo simples de **credit scoring** usando **Regressão Logística**. O objetivo é prever se um cliente deve ou não receber crédito com base em dados socioeconômicos e financeiros.
 
-* Como funciona uma solicitação de crédito;
-* O que é credit scoring;
-* Calcular o total de linhas e colunas;
-* Identificar dados duplicados;
-* Identificar dados nulos.
+A base de dados foi obtida do repositório da Alura e está traduzida para o português.
 
-* Converter variáveis categóricas em texto para numéricas;
-* Separar os dados em variáveis independentes e dependentes, x e y respectivamente;
-* Definir um random_state;
-* Dividir os dados em base de treino e de teste;
-* Aplicar a regressão logística.
+---
 
-* O que é e como construir uma matriz de confusão;
-* O que são as métricas precision, recall, f1-score e support;
-* O que é a curva ROC, como construí-la e interpretá-la.
+## 🧠 Tecnologias Usadas
 
-* Realizar uma análise descritiva de dados numéricos, categóricos e binários;
-* Aplicação e finalidade de histogramas, gráficos de barras e boxplots;
-* Identificação de uma base de dados desbalanceada através do histograma da variável resposta
+- Python
+- pandas
+- matplotlib
+- scikit-learn
 
-* Modelos de crédito são regulamentados e fiscalizados pelo Banco Central do Brasil;
-* Informações sensíveis em avaliação Credit Scoring;
-* Separação de variáveis categóricas agrupadas;
-* Criar funções que automatizam o ajuste de um modelo;
-* Particularidades do mercado financeiro: criação das variáveis de faixas de classificação;
-* Analisar resultados das métricas estatísticas de diferentes modelos;
-* Trade-off de métricas de avaliação;
-* Escolher o melhor modelo disponível.
+---
+
+## ⚙️ Passos do Projeto
+
+1. Carregamento da base de dados
+2. Pré-processamento das variáveis
+3. Engenharia de variáveis
+4. Treinamento do modelo
+5. Avaliação por matriz de confusão, relatório de classificação e curva ROC
+
+---
+
+## 📂 Fonte dos Dados
+
+Os dados foram carregados diretamente de:
+```
+https://raw.githubusercontent.com/alura-cursos/credit_scoring/main/base_dados_traduzida.csv
+```
+
+---
+
+## ▶️ Execução
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repo.git
+   cd nome-do-repo
+   ```
+2. Execute o script principal:
+jupyter notebook credit_score_model.ipynb
+
+---
+
+## 📌 Observações
+
+- O código é autoexplicativo e modularizado.
+- O classificador usado é a **Regressão Logística**, com métricas como Acurácia, F1-Score e AUC.
+- A curva ROC e matriz de confusão ajudam na visualização da performance do modelo.
+
+---
+
+## 📈 Resultados
+
+**Modelo: Regressão Logística**
+**Métricas avaliadas:**
+- Acurácia
+- Precision, Recall, F1-score
+- Curva ROC com AUC
+**Visualizações geradas:**
+**Matriz de confusão**
+**Curva ROC**
+
+---
+
+## 📁 Estrutura do Projeto
+seu-projeto/
+├── credit_score_analysis.ipynb  
+├── credit_scoring_course.ipynb
+├── ML_Credit_Scoring_Certificado.pdf 
+├── modelo.ipynb
+├── README.md                    
+└── dataset/                     
+    ├── base_dados_traduzida.csv
+    ├── german_credit.csv
+    └── german_dataset_dictionary.txt
+
+---
+
+## 📃 Licença
+
+Este projeto está sob a licença **MIT**.
+
+---
+
+## ✍️ Autor
+
+- [Lucas Leite Araujo](https://github.com/lucasaraujo11)
